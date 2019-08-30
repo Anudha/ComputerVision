@@ -15,7 +15,7 @@ Field of view at different locations on the microscope stage:
 ![Image description](GeneratedEllipticalCurve_1.gif) 
 
 Histogram of each field of view:
-![Image description](SampleSearch/Histogram of divisions of image 9.gif) 
+![Image description]('SampleSearch/Histogram of divisions of image 9.gif') 
 
 
 
