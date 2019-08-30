@@ -5,7 +5,7 @@ Image fingerprinting or autoencoding are worth examining if training on a finger
 Number of peaks in the histogram of an image may be a good feature to train on, so we considered it qualitatively.  
 
 
-![Image description](ComputerVision/SampleSearch/H1.png) 
+![Image description](H1.png) 
 
 
 
