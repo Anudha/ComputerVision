@@ -15,7 +15,7 @@ Field of view at different locations on the microscope stage:
 ![Image description](SampleSearch/Division_of_Image9.gif) 
 
 Histogram of each field of view:
-![Image description]('SampleSearch/Histogram of divisions of image 9.gif') 
+![Image description](SampleSearch/Histogram_divisions_of_image_9.gif) 
 
 
 
