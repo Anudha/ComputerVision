@@ -9,7 +9,7 @@ Image of a known sample:
 ![Image description](SampleSearch/8.tif) 
 
 Histogram of the image of known sample:
-![Image description](Histogram_of_Image8.tiff) 
+![Image description](SampleSearch/Histogram_of_Image8.tiff) 
 
 Field of view at different locations on the microscope stage:
 ![Image description](GeneratedEllipticalCurve_1.gif) 
