@@ -1,13 +1,12 @@
-This is one of the steps in automating an image acquisition routine for a microscope.  
-The sample is not immediately in the field of view.  An automated routine has to identify that the sample is in the view or not.  
-If not, the stage is moved a small increment.  
+One of the steps in automating an image acquisition routine for a microscope:  find the sample.    
+A sample or region of interest (ROI) is not always in the field of view.  An automated routine has to identify that the sample is in the view or incrementally move the stage to the correct location.   
 
-Image fingerprinting or autoencoding need to be examined.  Then train on select features instead of training on entire images.  
+Image fingerprinting or autoencoding are worth examining if training on a fingerprint is faster than training on entire images.  
 
-Number of peaks in the histogram of an image may be a good feature to train on.  
+Number of peaks in the histogram of an image may be a good feature to train on, so we considered it qualitatively.  
 
 Image of a known sample:
-![Image description](8.tif) 
+![Image description](SampleSearch/8.tif) 
 
 Histogram of the image of known sample:
 ![Image description](Histogram_of_Image8.tiff) 
