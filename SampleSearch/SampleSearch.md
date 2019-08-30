@@ -1,5 +1,4 @@
-One of the steps in automating an image acquisition routine for a microscope:  find the sample.    
-A sample or region of interest (ROI) is not always in the field of view.  An automated routine has to identify that the sample is in the view or incrementally move the stage to the correct location.   
+A sample or region of interest (ROI) is not always in the field of view of a microscope lens.  An automated data acqusition routine has to identify that the sample is in the view or incrementally move the stage to the correct location.   
 
 Image fingerprinting or autoencoding are worth examining if training on a fingerprint is faster than training on entire images.  
 
