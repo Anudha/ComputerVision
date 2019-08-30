@@ -1,0 +1,55 @@
+%Octave file
+%This scripts is working towards identifying which image in a set of images closely matches a given image, A.  
+
+close all
+clc
+clear all
+
+%Read in a target image
+Target_image=imread("8.tif");
+figure(4)
+imshow(Target_image)
+figure(5)
+hist(reshape(Target_image,(prod (size (Target_image))),1),100);
+axis off 
+
+
+%Read in a low magnification image
+Complete_Stage_Area=imread("9.tif");
+figure(1)
+imshow(Complete_Stage_Area)
+
+%Break down low magnification image as if the microscope were scanning a 4x4 area
+xdim=1024/4;
+ydim=1280/4;
+
+figure(2)%for images
+imageset=ones(xdim,ydim,16);
+figure(3)%for histograms
+
+k=1;
+for i=1:4;% index for scan area image
+  for j=1:4
+    
+    X=Complete_Stage_Area((i-1)*xdim+1:i*xdim, (j-1)*ydim+1:j*ydim);
+    % name(k)=X;
+    figure(2)
+    subplot (4, 4, k)
+    imshow(X)
+    imageset(:,:,k)=X;
+    
+    figure(3)
+    %axes ('position', [0.55 0.1 0.4 0.2]) 
+    subplot (4, 4, k)
+    hold on
+    hist(reshape(X,(prod (size (X))),1),100);
+    axis off 
+    % set(gca,'Position',[(i)/4-1/4 (j)/4-1/4 (i+1)/4-1/4 (j+1)/4-1/4])
+    
+    k=k+1;
+  end
+end
+
+
+
+
